@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>SCM Portal</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navContent">
+
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <!-- <a href="#" class="logo">logo</a> -->
+
+      <ul class="menu" id="js-menu">
+        <li id="menuFile" class="menuItem"><a href="#">File</a></li>
+        <li id="menuSettings" class="menuItem"><a href="#">Settings</a></li>
+        <li id="menuNews" class="menuItem"><a href="#">News</a></li>
+        <li id="menuDocs" class="menuItem"><a href="#">Documentation</a></li>
+        <li id="menuAbout" class="menuItem"><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <section class="groupProduct">
+      <div class="groupProductControls" id="gpControl1">
+        <div class="selectGroup">
+          <div id="groupLabel">Group:</div>
+          <div id="groupValue">
+
+              <input type="text" list="cars" placeholder="Group Name" />
+              <datalist id="cars">
+                <option>Volvo</option>
+                <option>Saab</option>
+                <option>Mercedes</option>
+                <option>Audi</option>
+              </datalist>
+
+            <select id="groupSelect">
+              <option value="ACIS">ACIS</option>
+              <!-- Option values entered via js -->
+            </select>
+          </div>
+        </div>
+        <div class="selectProduct">
+
+        </div>
+      </div>
+      <div class="groupProductControls" id="gpControl2">
+
+      </div>
+      <div class="groupProductControls" id="gpControl3">
+
+      </div>
+    </section>
+    <section class="buildElevate">
+
+    </section>
+    <section class="activity">
+
+    </section>
+  </header>
+  <script src="index.js"></script>
+</body>
+
+</html>
