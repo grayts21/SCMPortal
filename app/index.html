@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>SCM Portal</title>
 </head>
@@ -20,49 +20,52 @@
       <!-- <a href="#" class="logo">logo</a> -->
 
       <ul class="menu" id="js-menu">
-        <li id="menuFile" class="menuItem"><a href="#">File</a></li>
+        <li id="menuSCM" class="menuItem"><a href="#" class="menuActivex">SCM</a></li>
+        <li id="menuNews" class="menuItem"><a href="#" class="menuActivex">News</a></li>
+        <li id="menuDocs" class="menuItem"><a href="#" class="menuActivex">Docs</a></li>
         <li id="menuSettings" class="menuItem"><a href="#">Settings</a></li>
-        <li id="menuNews" class="menuItem"><a href="#">News</a></li>
-        <li id="menuDocs" class="menuItem"><a href="#">Documentation</a></li>
-        <li id="menuAbout" class="menuItem"><a href="#">About</a></li>
+        <li id="menuAbout" class="menuItem"><a href="#" class="menuActivex">About</a></li>
       </ul>
     </nav>
-    <section class="groupProduct">
-      <div class="groupProductControls" id="gpControl1">
-        <div class="selectGroup">
-          <div id="groupLabel">Group:</div>
-          <div id="groupValue">
-
-              <input type="text" list="cars" placeholder="Group Name" />
-              <datalist id="cars">
-                <option>Volvo</option>
-                <option>Saab</option>
-                <option>Mercedes</option>
-                <option>Audi</option>
-              </datalist>
-
-            <select id="groupSelect">
-              <option value="ACIS">ACIS</option>
-              <!-- Option values entered via js -->
-            </select>
-          </div>
+    <section id="selectGP">
+      <div class="selectClass" id="selectActive">
+        <div id="selectActiveGroupLbl">Select Group/Product</div>
+        <!-- <div id="selectActiveGroup"> -->
+        <div id="selectActiveGroupCtrl">
+          Group:
+          <select id="selectGroupSelect">
+            <option value="group">group</option>
+          </select>
         </div>
-        <div class="selectProduct">
-
+        <!-- </div> -->
+        <!-- <div id="selectActiveProduct"> -->
+        <div id="selectActiveProductLbl">Select Favorates</div>
+        <div id="selectActiveProductCtrl">
+          Product:
+          <select id="selectProductSelect">
+            <option value="Product">Product</option>
+          </select>
         </div>
-      </div>
-      <div class="groupProductControls" id="gpControl2">
-
-      </div>
-      <div class="groupProductControls" id="gpControl3">
-
+        <!-- </div> -->
       </div>
     </section>
-    <section class="buildElevate">
 
+    <section class="buildElevate">
+      <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing.
+      </p>
+      <div class="column red">
+        <a href="#" class="button blue">Push this button once</a>
+        <a href="#" class="button red">Push red button</a>
+        <a href="#" class="button green">Push green button</a>
+      </div>
     </section>
     <section class="activity">
+      <div class="ActivityGroup" id="buildActivity">
 
+      </div>
+      <div class="ActivityGroup" id="elevateActivity">
+
+      </div>
     </section>
   </header>
   <script src="index.js"></script>
