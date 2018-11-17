@@ -50,6 +50,7 @@ nav a {
   color: #16166B;
   text-decoration: none;
   width: 120px;
+  transition: all 200ms ease;
 }
 nav a:hover {
   /* background-color: #1E90FF; */
@@ -68,20 +69,15 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.Acts {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px;
-}
 .ActItem {
   background-color: #00fae9;
-  width: 100px;
   height: 50px;
 }
 .Acts {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-auto-flow: column;
   grid-gap: 10px 10px;
-  grid-column: 1fr 1fr 1fr;
 }
 div {
   width: 400px;
@@ -104,6 +100,7 @@ div {
   position: relative;
   padding: 5px 10px 10px 10px;
   box-shadow: 2px 2px 8px sienna;
+  transition: all 300ms linear;
 }
 .box:hover {
   /* margin-top: 13px; */
